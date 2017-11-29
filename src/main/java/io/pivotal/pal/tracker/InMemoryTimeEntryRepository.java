@@ -8,11 +8,7 @@ import java.util.List;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository{
     private HashMap<Long, TimeEntry> timeEntries = new HashMap<>();
-
-    public InMemoryTimeEntryRepository() {
-        timeEntries.put(new Date().getTime(), new TimeEntry(9,10, LocalDate.now(),15));
-    }
-
+    
     @Override
     public TimeEntry create(TimeEntry timeEntry){
         timeEntry.setId(timeEntries.size() + 1);
