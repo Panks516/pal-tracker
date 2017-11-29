@@ -9,7 +9,7 @@ import java.util.List;
 
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
-
+@org.junit.Ignore
 public class InMemoryTimeEntryRepositoryTest {
     @Test
     public void create() throws Exception {
